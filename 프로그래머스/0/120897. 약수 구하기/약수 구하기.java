@@ -8,8 +8,6 @@ class Solution {
                 list.add(i);
             }
         }
-        int[] answer = list.stream().mapToInt(x -> x).toArray();
-        Arrays.sort(answer);
-        return answer;
+        return list.stream().mapToInt(x -> x).toArray();
     }
 }
